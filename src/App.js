@@ -1,37 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import CategoriesMenu from './components/CategoriesMenu/categories.component';
+import './App.scss';
+import {Routes, Route } from 'react-router-dom'
+import Home from './components/routes/Home/home.component';
+import { Outlet } from 'react-router-dom';
+
+import Hats from './components/routes/category/Hats/hats.component';
+import Jackets from './components/routes/category/Jackets/jackets.component';
+import Mens from './components/routes/category/Mens/mens.component';
+import Sneakers from './components/routes/category/Sneakers/sneakers.component';
+import Womens from './components/routes/category/Womens/womens.component';
+
 const App = () => {
-const categories = [
-  {
-    "id": 1,
-    "title": "hats",
-    "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
-  },
-  {
-    "id": 2,
-    "title": "jackets",
-    "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png"
-  },
-  {
-    "id": 3,
-    "title": "sneakers",
-    "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
-  },
-  {
-    "id": 4,
-    "title": "womens",
-    "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png"
-  },
-  {
-    "id": 5,
-    "title": "mens",
-    "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
+  const Navbar = () => {
+    return (<>
+      <h1>I am Navbar</h1>
+      <Outlet />
+    </>)
   }
-]
-  
+
   return (
-    <CategoriesMenu categories={ categories } />
+    <Routes>
+      <Route path='/' element={<Navbar/>}>
+        <Route path='/' element={<Home />} />
+        <Route path='/Hats' element={<Hats />} />
+        <Route path='/Jackets' element={<Jackets />} />
+        <Route path='/Mens' element={<Mens />} />
+        <Route path='/Sneakers' element={<Sneakers />} />
+        <Route path='/Womens' element={<Womens />} />
+      </Route>
+    </Routes>
+    
   );
 }
 
