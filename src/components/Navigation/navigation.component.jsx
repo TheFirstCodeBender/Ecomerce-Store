@@ -8,10 +8,11 @@ const Navbar = () => {
         <Fragment >
             <div className="navigation">
                 <Link className="logo-container" to='/'>
-                    <CrownLogo className="logo"/>
+                    <CrownLogo className="logo" />
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to='/shop'>Shop </Link>
+                    <Link className="nav-link" to='/SignIn'>Sign In </Link>
                 </div>
             </div>
         <Outlet />
