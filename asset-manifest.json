@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Uncrown-City-Ecomerce/static/css/main.b55d0812.css",
-    "main.js": "/Uncrown-City-Ecomerce/static/js/main.332056ce.js",
+    "main.js": "/Uncrown-City-Ecomerce/static/js/main.7102eb1c.js",
     "static/media/UncrowncityBackground.jpg": "/Uncrown-City-Ecomerce/static/media/UncrowncityBackground.9e29db1df689ca19ad12.jpg",
     "static/media/crown.svg": "/Uncrown-City-Ecomerce/static/media/crown.1e66996d573acba4b69b4c9df912aebb.svg",
     "index.html": "/Uncrown-City-Ecomerce/index.html",
     "main.b55d0812.css.map": "/Uncrown-City-Ecomerce/static/css/main.b55d0812.css.map",
-    "main.332056ce.js.map": "/Uncrown-City-Ecomerce/static/js/main.332056ce.js.map"
+    "main.7102eb1c.js.map": "/Uncrown-City-Ecomerce/static/js/main.7102eb1c.js.map"
   },
   "entrypoints": [
     "static/css/main.b55d0812.css",
-    "static/js/main.332056ce.js"
+    "static/js/main.7102eb1c.js"
   ]
 }
